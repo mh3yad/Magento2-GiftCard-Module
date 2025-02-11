@@ -1,0 +1,18 @@
+{
+  "name": "mh3yad/module-giftcard",
+  "description": "N/A",
+  "type": "magento2-module",
+  "require": {
+    "php": "~8.1.0||~8.2.0||~8.3.0",
+    "magento/framework": "*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Mh3yad\\GiftCard\\": ""
+    }
+  }
+}
+
