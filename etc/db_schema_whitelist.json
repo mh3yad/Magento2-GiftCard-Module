@@ -1,0 +1,36 @@
+{
+    "giftcard": {
+        "column": {
+            "id": true,
+            "assigned_customer_id": true,
+            "code": true,
+            "recipient_name": true,
+            "recipient_email": true,
+            "status": true,
+            "initial_value": true,
+            "current_value": true,
+            "content": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "GIFTCARD_ASSIGNED_CUSTOMER_ID_CUSTOMER_ENTITY_ENTITY_ID": true
+        }
+    },
+    "giftcard_usage": {
+        "column": {
+            "id": true,
+            "gift_card_id": true,
+            "order_id": true,
+            "value_change": true,
+            "note": true,
+            "created_at": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "GIFTCARD_USAGE_GIFT_CARD_ID_GIFTCARD_ID": true,
+            "GIFTCARD_USAGE_ORDER_ID_SALES_ORDER_ENTITY_ID": true
+        }
+    }
+}
