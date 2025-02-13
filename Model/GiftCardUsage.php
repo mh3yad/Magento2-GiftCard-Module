@@ -9,6 +9,7 @@ use DateTime;
 
 class GiftCardUsage extends AbstractModel implements GiftCardUsageInterface
 {
+
     /**
      * @return void
      */
@@ -94,6 +95,6 @@ class GiftCardUsage extends AbstractModel implements GiftCardUsageInterface
      */
     public function setCreatedAt(\DateTime $createdAt): void
     {
-        $this->setData('created_at', $createdAt);
+        $this->setData('created_at', $createdAt->format('Y-m-d H:i:s'));
     }
 }

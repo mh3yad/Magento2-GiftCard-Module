@@ -10,6 +10,9 @@ use DateTime;
 class GiftCard extends AbstractModel implements GiftCardInterface
 {
 
+    /**
+     * @return void
+     */
     protected function _construct()
     {
         $this->_init(GiftCardResource::class);
@@ -140,7 +143,7 @@ class GiftCard extends AbstractModel implements GiftCardInterface
      */
     public function setCreatedAt(DateTime $createdAt): void
     {
-        $this->setData('created_at', $createdAt);
+        $this->setData('created_at', $createdAt->format('Y-m-d H:i:s'));
     }
 
     /**
@@ -156,6 +159,6 @@ class GiftCard extends AbstractModel implements GiftCardInterface
      */
     public function setUpdatedAt(DateTime $updatedAt): void
     {
-        $this->setData('updated_at', $updatedAt);
+        $this->setData('updated_at', $updatedAt->format('Y-m-d H:i:s'));
     }
 }

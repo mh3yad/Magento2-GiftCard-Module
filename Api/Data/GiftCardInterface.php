@@ -3,7 +3,6 @@
 namespace Mh3yad\GiftCard\Api\Data;
 
 use DateTime;
-use Magento\Tests\NamingConvention\true\string;
 
 interface GiftCardInterface
 {

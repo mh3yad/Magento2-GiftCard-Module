@@ -6,7 +6,7 @@ use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 use Mh3yad\GiftCard\Model\GiftCardUsage;
 use Mh3yad\GiftCard\Model\ResourceModel\GiftCardUsage as GiftCardUsageResource;
 
-class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
+class Collection extends AbstractCollection
 {
     /**
      * @return void
