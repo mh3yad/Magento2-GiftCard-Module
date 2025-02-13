@@ -2,7 +2,9 @@
 
 namespace Mh3yad\GiftCard\Model\ResourceModel;
 
-class GiftCard extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
+use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
+
+class GiftCard extends AbstractDb
 {
     /**
      * @return void
